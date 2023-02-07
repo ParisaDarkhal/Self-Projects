@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
+    <!-- put favicon image in the href here -->
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Put google font link under this line -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container bg-light rounded-3 position-relative mainBox">
+      <textarea name="screet" id="screen" cols="30" rows="2" value=""></textarea
+      ><br />
+      <table>
+        <tr>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="insertNumber(event)"
+              value="1"
+            >
+              1
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="insertNumber(event)"
+              value="2"
+            >
+              2
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="insertNumber(event)"
+              value="3"
+            >
+              3
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-info"
+              onclick="insertOperator(event)"
+              value="+"
+            >
+              +
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-info"
+              onclick="insertOperator(event)"
+              value="-"
+            >
+              -
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="insertNumber(event)"
+              value="."
+            >
+              .
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="insertNumber(event)"
+              value="4"
+            >
+              4
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="insertNumber(event)"
+              value="5"
+            >
+              5
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="insertNumber(event)"
+              value="6"
+            >
+              6
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-info"
+              onclick="insertOperator(event)"
+              value="*"
+            >
+              ×
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-info"
+              onclick="insertOperator(event)"
+              value="/"
+            >
+              ÷
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="insertNumber(event)"
+              value="7"
+            >
+              7
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="insertNumber(event)"
+              value="8"
+            >
+              8
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="insertNumber(event)"
+              value="9"
+            >
+              9
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="insertNumber(event)"
+              value="0"
+            >
+              0
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-danger"
+              onclick="clearField(event)"
+            >
+              CE
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-success"
+              onclick="calculateResult(event)"
+              value="="
+            >
+              =
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://parisadarkhal.github.io/CV/">Parisa Darkhal</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

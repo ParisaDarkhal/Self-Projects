@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  background-color: #e6eff6 !important; /* change based on design requirments */
+  font-family: "Karla", sans-serif !important; /* change based on design requirments */
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold !important;
+}
+
+input {
+  width: 75% !important;
+  height: 2.4rem;
+}
+
+h5 {
+  flex-grow: 1;
+}
+
+.listField div {
+  display: flex;
+  margin: 10px;
+}
+
+.listField button {
+  border-radius: 16px;
+  margin: 5px;
+}
+
+.clearAll button {
+  margin-left: 40%;
+  font-weight: bold !important;
+  color: #fa8072;
+}
+
+@media (min-width: 768px) {
+  .mainBox {
+    max-width: 500px !important; /* change based on design requirments */
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

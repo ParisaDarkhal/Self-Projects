@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  background-color: #e6eff6 !important; /* change based on design requirments */
+  font-family: "Karla", sans-serif !important; /* change based on design requirments */
+}
+
+button {
+  padding: 15px !important;
+}
+.btn-danger {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+@media (min-width: 768px) {
+  .mainBox {
+    max-width: 300px !important; /* change based on design requirments */
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
